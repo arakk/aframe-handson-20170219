@@ -10,13 +10,14 @@
 
 		<!-- ↓↓↓ここから下に記述する↓↓↓ -->
 		<a-assets>
-		<a-assets-item id="moongirl-obj" src="/assets/moongirl.obj"></a-assets-item>
-		<a-assets-item id="moongirl-mtl" src="/assets/moongirl.mtl"></a-assets-item>
-		<a-assets-item id="moongirl-png" src="/assets/moongirl.png"></a-assets-item>
+		<a-assets-item id="moongirl-obj" src="./assets/moongirl.obj"></a-assets-item>
+		<a-assets-item id="moongirl-mtl" src="./assets/moongirl.mtl"></a-assets-item>
+		<a-assets-item id="moongirl-png" src="./assets/moongirl.png"></a-assets-item>
 		
 		<img id="temple" src="/assets/temple_360.jpg">
 		</a-assets>
 		<a-entity obj-model="obj: #moongirl-obj; mtl: #moongirl-mtl; png: #moongirl-png;" ></a-entity>
+		<a-animation attribute="position" begin="2000" to="10 10 10"></a-animation>
 		<a-camera position="0 5 15" rotation="0 120 0"></a-camera>
 		<a-sky src="#temple"></a-sky>
 
